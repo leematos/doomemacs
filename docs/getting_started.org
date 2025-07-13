@@ -646,13 +646,11 @@ packages (yet).
 ** Up/Downgrading Emacs
 *You may encounter errors after up/downgrading Emacs.* Run ~doom sync~ on the
 command line after changing the installed version of Emacs. If you've changed
-the major version (e.g. 27 -> 28 or vice versa) run ~doom build~ too.
+the major version (e.g. 27 -> 28 or vice versa)  you will be prompted to rebuild your packages. You should do this.
 
 + ~doom sync~ will re-index any built-in/site loaddef files. This is especially
   necessary if paths to built-in libraries have changed.
-+ ~doom build~ will recompile all your installed packages, which is necessary
-  because Emacs bytecode not generally forward compatible across major releases
-  (e.g. 27 -> 28). Alternatively, reinstall all your packages by deleting
++ If you choose not to rebuild your packages, you could reinstall all your packages by deleting
   =~/.emacs.d/.local=, then run ~doom sync~.
 
 * TODO Migrate
